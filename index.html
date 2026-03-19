@@ -38,6 +38,7 @@ header p {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 /* CARD */
 .card {
   background: #111;
@@ -59,6 +60,7 @@ header p {
   background: #000;
   transition: 0.4s;
 }
+
 .card img:hover {
   transform: scale(1.1);
 }
@@ -90,6 +92,29 @@ header p {
 .whatsapp a:hover {
   background: #1ebe5d;
 }
+
+/* SCROLLER */
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 40px 0;
+}
+
+.scroller-track {
+  display: inline-flex;
+  gap: 30px;
+  animation: scrollGallery 20s linear infinite;
+}
+
+.scroller img {
+  height: 300px;
+  border-radius: 10px;
+}
 </style>
 </head>
 
@@ -113,6 +138,16 @@ header p {
   </div>
 
 </section>
+
+<!-- SCROLLER -->
+<div class="scroller">
+  <div class="scroller-track">
+    <img src="madonna.jpeg">
+    <img src="sadhu.jpeg">
+    <img src="madonna.jpeg">
+    <img src="sadhu.jpeg">
+  </div>
+</div>
 
 <div class="whatsapp">
   <a href="https://wa.me/393281868258">Contattami</a>
