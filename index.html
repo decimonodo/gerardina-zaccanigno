@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Nome Artista</title>
+
+<style>
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: white;
+  font-family: Arial;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.info {
+  padding: 10px;
+  color: #ccc;
+}
+
+.whatsapp {
+  text-align: center;
+  margin: 40px;
+}
+
+.whatsapp a {
+  background: #25D366;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Gerardina Zaccanigno</h1>
+  <p>Artista</p>
+</header>
+
+<section class="gallery">
+
+  <div class="card">
+    <img src="quadro1.jpg">
+    <div class="info">Titolo quadro</div>
+  </div>
+
+  <div class="card">
+    <img src="quadro2.jpg">
+    <div class="info">Titolo quadro</div>
+  </div>
+
+</section>
+
+<div class="whatsapp">
+  <a href="https://wa.me/393281868258">Contattami</a>
+</div>
+
+</body>
+</html>
